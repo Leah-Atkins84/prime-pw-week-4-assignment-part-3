@@ -26,10 +26,8 @@ let listItems= basket
 listItems.forEach(element => console.log(element));
 
 function empty(basket){
-    empty = [];
-    return true;
+    basket.splice(0, basket.length);
 }
-empty();
 
 console.log('empty basket:', empty(basket));
 console.log(basket);
