@@ -21,9 +21,13 @@ basket.push('broccoli');
 console.log('basket has these items:', basket);
 
 
-let listItems= basket
-
-listItems.forEach(element => console.log(element));
+function listItems(array){
+  let listItems = basket;
+  for (let i =0; i< array.length; i++){
+      console.log('basket item is:', listItems[i]);
+    }
+}
+listItems(basket);
 
 function empty(basket){
     basket.splice(0, basket.length);
